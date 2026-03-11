@@ -13,7 +13,7 @@ exports.handler = async (event) => {
 
   try {
 
-    const api = "https://api.vevioz.com/api/button/mp4?url=" + encodeURIComponent(url);
+    const api = "https://p.oceansaver.in/ajax/download.php?format=mp4&url=" + encodeURIComponent(url);
 
     const res = await fetch(api);
     const data = await res.text();
